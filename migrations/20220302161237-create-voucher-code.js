@@ -17,6 +17,9 @@ module.exports = {
       code: {
         type: Sequelize.STRING
       },
+      isUsed: {
+        type: Sequelize.STRING
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

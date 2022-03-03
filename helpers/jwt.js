@@ -2,13 +2,13 @@ const jwt = require("jsonwebtoken");
 require("dotenv").config();
 
 function loginToken(input) {
-    const token = jwt.sign(input, process.env.SECRET, { expiresIn: "6h" });
+    const token = jwt.sign(input, process.env.SECRET, { expiresIn: "24h" });
     return token;
 }
 
 function refreshToken(input) {
     const refreshToken = jwt.sign(input, process.env.SECRET, {
-        expiresIn: "30m",
+        expiresIn: "60m",
     });
     return refreshToken;
 }

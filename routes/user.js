@@ -14,6 +14,8 @@ router.post('/refresh-token', authorization, adminController.refresh_token)
 router.post('/checkout/:id_user', authorization, userController.checkout)
 router.post('/create-payment/:id_user', authorization, userController.payment)
 router.post('/verify-voucher/:id_user', authorization, userController.verifyVoucher)
+router.post('/redeem-voucher/:id_user', authorization, userController.redeemVoucher)
+router.post('/purchase-history/:id_user', authorization, userController.orderHistory)
 
 
 

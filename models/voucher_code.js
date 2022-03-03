@@ -16,7 +16,8 @@ module.exports = (sequelize, DataTypes) => {
   voucher_code.init({
     id_voucher: DataTypes.INTEGER,
     phone_number: DataTypes.STRING,
-    code: DataTypes.STRING
+    code: DataTypes.STRING,
+    isUsed: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'voucher_code',

@@ -26,8 +26,7 @@ module.exports = (sequelize, DataTypes) => {
     buy_type: DataTypes.STRING,
     max_buy: DataTypes.INTEGER,
     max_gift: DataTypes.INTEGER,
-    status: DataTypes.STRING,
-    voucher_code: DataTypes.STRING
+    status: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Voucher',
